@@ -21,7 +21,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            <h1>BITS PANDAS</h1>
+            <h1 className="heading">BITS PANDAS</h1>
             <div className="mid-section">
                 <div className="container">
                     <div className="vertical">

@@ -38,10 +38,11 @@
     display: inline-block;
 }
 
-h1 {
+.heading {
     font-family: "technology", sans-serif;
     text-align: center;
-    font-size: 5rem;
+    font-weight: 600;
+    font-size: 7rem;
     color: white;
 }
 
