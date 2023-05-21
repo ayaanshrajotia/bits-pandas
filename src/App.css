@@ -1,38 +1,291 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap");
+
+@font-face {
+    font-family: "gameplay";
+    src: url("../src/fonts/Gameplay.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "technology";
+    src: url("../src/fonts/Technology.ttf") format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-bg {
+    -webkit-text-fill-color: inherit;
+    background-attachment: fixed;
+    background-clip: initial;
+    background-color: #3609d8;
+    background-image: url("https://pixel.pandaparadise.io/static/media/26733992_cloudy_sky.ca42aff9ac1fd481d0de.jpg");
+    background-position: 50% 50%;
+    background-repeat: repeat-x;
+    background-size: cover;
+    mix-blend-mode: darken;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav {
+    margin-bottom: 0;
+    padding: 30px 40px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1160px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+h1 {
+    font-family: "technology", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.social-links {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    background-color: initial;
+    border: 1px #000;
+    border-radius: 0;
+    mix-blend-mode: normal;
+    width: 64px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.mid-section {
+    padding: 40px;
+}
+
+.big-gif {
+    border-radius: 45px;
+    box-shadow: 5px 5px 18px -1px #000;
+    margin-bottom: 60px;
+    width: 500px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mint-card-connect {
+    align-items: center;
+    background: #020024;
+    background: linear-gradient(75deg, #145369, #00d4ff);
+    background-image: url("https://pixel.pandaparadise.io/static/media/26733992_cloudy_sky.ca42aff9ac1fd481d0de.jpg");
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    max-height: 575px;
+    max-width: 750px;
+    min-width: 350px;
+    font-size: 1.3rem;
+    gap: 30px;
+    transform: scaleY(-1);
+}
+
+.mint-card-connect-inner {
+    display: flex;
+    transform: scaleY(-1);
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.mint-image-disconnected {
+    border-radius: 180px;
+    width: 200px;
+}
+
+.mint-text-disconnected {
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: "gameplay", sans-serif;
+    padding: 8px;
+    text-align: center;
+}
+
+.login-button {
+    background-color: #145369;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "VT323", sans-serif;
+    width: 95%;
+    font-size: 55px;
+    padding: 5px 5px;
+    transition-duration: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgb(68, 199, 243);
+}
+
+.legendary-container {
+    padding-top: 75px;
+}
+
+.heading-2 {
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 70px;
+    font-family: "gameplay", sans-serif;
+    text-align: center;
+}
+
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+}
+
+.w-container:before,
+.w-container:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.grid {
+    grid-auto-flow: row;
+    grid-template-rows: auto auto auto auto;
+    overflow: auto;
+}
+
+.panda {
+    grid-column: span 1;
+    grid-column-end: span 1;
+    grid-column-start: span 1;
+    grid-row: span 1;
+    grid-row-end: span 1;
+    grid-row-start: span 1;
+    justify-self: center;
+    border-radius: 180px;
+    width: 200px;
+}
+
+.faq-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.button {
+    border-radius: 20px;
+    font-family: "gameplay", sans-serif;
+    font-size: 50px;
+    margin-bottom: 72px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898ec;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 11px;
+}
+
+.faq-container {
+    max-width: 800px;
+    width: 100%;
+}
+.faq-hold {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.faq-h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: "gameplay", sans-serif;
+    text-transform: uppercase;
+}
+
+.faq-ans {
+    overflow: hidden;
+    padding-bottom: 0;
+    text-align: left;
+    font-weight: 600;
+    font-family: "Exo", sans-serif;
+    font-size: 20px;
+}
+
+li {
+    font-weight: 600;
+    font-family: "Exo", sans-serif;
+    font-size: 20px;
+}
+
+.thin {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 479px) {
+    .big-gif {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .heading-2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .faq-h3 {
+        font-size: 21px;
+    }
+
+    .panda {
+        width: 180px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
 }
